@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book a Room</title>
+  <style>
+    body { font-family: Arial; text-align: center; }
+    form { max-width: 500px; margin: auto; padding: 20px; }
+    input, select, button { width: 100%; padding: 10px; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>Book a Room</h1>
+  <form id="booking-form">
+    <label>Room Type</label>
+    <select name="room_type">
+      <option>Standard</option>
+      <option>Deluxe</option>
+    </select>
+    <label>Booking Type</label>
+    <select name="booking_type">
+      <option>Hourly</option>
+      <option>Nightly</option>
+    </select>
+    <label>Check-In</label>
+    <input type="datetime-local" name="check_in" required>
+    <label>Check-Out</label>
+    <input type="datetime-local" name="check_out" required>
+    <label>Name</label>
+    <input type="text" name="guest_name" required>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <button type="submit">Book and Pay</button>
+  </form>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
