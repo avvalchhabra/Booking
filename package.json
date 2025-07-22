@@ -1,0 +1,9 @@
+{
+    "name": "booking-engine",
+    "version": "1.0.0",
+    "description": "A serverless hotel booking engine with Google Sheets, EmailJS, and Razorpay",
+    "main": "public/hourly.html",
+    "scripts": {
+        "start": "echo 'Run locally by opening public/hourly.html in a browser or deploy to GitHub Pages'"
+    }
+}
