@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Booking - Stylish Haven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Stylish Haven Hotel</h1>
+            <p class="mt-2 text-lg">Hourly Booking</p>
+            <nav class="mt-4">
+                <a href="hourly.html" class="text-white underline mx-2">Hourly</a>
+                <a href="nightly.html" class="text-white mx-2">Nightly</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-10">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Deluxe Room</h2>
+                <img src="assets/deluxe-room.jpg" alt="Deluxe Room" class="w-full h-48 object-cover rounded mb-4">
+                <video controls class="w-full h-48 object-cover rounded mb-4">
+                    <source src="assets/deluxe-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-gray-700 mb-4">Cozy room for short stays, ₹500/hour.</p>
+                <button onclick="selectRoom('Deluxe Room', 500, 'hourly')" class="w-full bg-blue-900 text-white p-3 rounded hover:bg-blue-800">Select Room</button>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">Suite Room</h2>
+                <img src="assets/suite-room.jpg" alt="Suite Room" class="w-full h-48 object-cover rounded mb-4">
+                <video controls class="w-full h-48 object-cover rounded mb-4">
+                    <source src="assets/suite-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-gray-700 mb-4">Luxurious suite, ₹800/hour.</p>
+                <button onclick="selectRoom('Suite Room', 800, 'hourly')" class="w-full bg-blue-900 text-white p-3 rounded hover:bg-blue-800">Select Room</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-4 text-center">
+        <p>© 2025 Stylish Haven Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
