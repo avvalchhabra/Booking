@@ -1,0 +1,5 @@
+# Ignore sensitive files
+*.env
+node_modules/
+public/assets/*.jpg
+public/assets/*.mp4
