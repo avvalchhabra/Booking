@@ -1,0 +1,26 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header, footer {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+}
+
+form input, form select {
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
